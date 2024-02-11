@@ -1,0 +1,98 @@
+*{
+    font-family: sans-serif;
+    font-weight: bold;
+
+}
+body{
+    margin: 275px;
+    background-color: beige;
+    color: blueviolet;
+}
+.main-menu ul li{
+   
+    
+   
+    color:blue;
+    background:transparent;
+    width: 100px;
+    margin: auto;
+    font-family: monospace;
+    font-weight: bold;
+    
+    position:relative;
+    float:left;
+
+
+}
+#logo{
+height: 50px;
+width:100px;
+cursor:pointer;
+
+}
+.header-area{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.img-display{
+    
+    padding: 10px;
+    height: 450px;
+    display: inline;
+}
+.img-display:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 2px 2px gray;
+}
+   
+
+.button-primary{
+    border:  solid 2px blue;
+    border-radius: 30px;
+}
+.input{
+
+    border: solid;
+    border-radius: 10px;
+    border-color: blueviolet;
+    color: blueviolet;
+
+    
+
+}
+
+.btn{
+    border:  solid 2px blueviolet;
+    border-radius: 30px;
+
+    width: 90px;
+}
+.btn:hover{
+    border:  solid 2px blueviolet;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: blueviolet;
+
+}
+.login-elements{
+    border: solid 2px blueviolet;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 5px purple;
+    margin-top: -6.9rem;
+}
+.btn-admin{
+      border:  solid 2px blueviolet;
+    border-radius: 30px;
+
+    width: 90px;
+
+}
+.btn-admin:hover{
+    border:  solid 2px blueviolet;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: blueviolet;
+
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Car</title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="addcarsstyle.css">
+
+    
+    <link src="script.js">
+</head>
+
+<body>
+
+    <!-- header area -->
+    <header class="header ">
+        <a href="#" class="logo"><span>CarSelling</span>Website</a>
+
+        <nav class="navbar">
+            <a href="mainpage.php">Home</a>
+            <a href="cars.html">Sell Cars</a>
+            <a href="parts.php ">Buy Parts</a>
+            <a href="about.html">About Us</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="profile.php">Profile</a>
+
+            <a href="logout.php" class="btn-logout">Logout</a>
+
+        </nav>
+    </header>
+    <div>
+        <h1>Add Car Within Seconds!</h1>
+        <center>
+            <div class="formstyle">
+                <form method="POST" action="sellCarUserConn.php" enctype="multipart/form-data" onsubmit="return validate();">
+        
+                    Car Name<input type="text" name="product_name" class="inputstyle" id="carname"required><br><br><br>
+                    Price<input type="number" name="product_price" class="inputstyle" id="price"required><br><br><br>
+                    Owner Name<input type="text" name="owner_name" class="inputstyle" id="ownname"required><br><br><br>
+                    Registered At<input type="text" name="registration_state" class="inputstyle" id="reg"required><br><br><br>
+                    Kms Driven<input type="number" name="kms_driven" class="inputstyle" id="kms"required><br><br><br>
+                    Owner Contact<input type="number" name="owner_contact" class="inputstyle" id="owncon"required><br><br><br>
+                    Insurance<input type="text" name="insurance" class="inputstyle" id="ins"required
+                        placeholder="input valid or invalid"><br><br><br>
+                    Image of Car<input type="file" name="product_img" class="inputstyles" required><br><br><br>
+                    <button name="submit_details" class="btn-submit-details">Submit Details</button>
+        
+                </form>
+            </div>
+        </center>
+    </div>
+    <script>
+        const carname = document.getElementById("carname");
+        const price = document.getElementById("price");
+        const ownname = document.getElementById("ownname");
+        const reg = document.getElementById("reg");
+        const kms = document.getElementById("kms");
+        const owncon = document.getElementById("owncon");
+        const ins = document.getElementById("ins");
+
+
+        // function for form validation
+        function validate() {
+
+
+
+
+            // checking password
+
+            // checking phone number
+
+            // checking carname length
+            if (carname.value.length < 3 || carname.value.length > 20) {
+                alert("Car Name length should be more than 2 and less than 20");
+                carname.focus();
+                return false;
+            }
+            // checking price
+            if (price.value.length < 5 || price.value.length > 11) {
+                alert("Price should be more than 5 digits and less than 11");
+                price.focus();
+                return false;
+            }
+            // checking name length
+            if (ownname.value.length < 2 || ownname.value.length > 20) {
+                alert("Name length should be more than 2 and less than 21");
+                ownname.focus();
+                return false;
+            }
+            // checking registered state
+            if (reg.value.length < 2 || reg.value.length > 20) {
+                alert("state Name length should be more than 2 and less than 21");
+                reg.focus();
+                return false;
+            }
+            // checking Insurance
+            if (ins.value.length < 4 || ins.value.length > 20) {
+                alert("Insurance  must be written Valid or Invalid");
+                ins.focus();
+                return false;
+            }
+            // checking Phonenumber
+            if (!owncon.value.match(/^[1-9][0-9]{9}$/)) {
+                alert("Phone number must be 10 characters long number and first digit can't be 0!");
+                owncon.focus();
+                return false;
+            }
+
+
+
+
+            return true;
+        }
+    </script>
+    
+
+  
+
+
+
+
+</body>
+
+</html>

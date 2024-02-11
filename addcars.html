@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Car</title>
+    <link rel="stylesheet" href="addcarsstyle.css">
+   
+</head>
+<body>
+    <h1>Add Car</h1>
+    <center>
+    <div class="formstyle">
+        <form  method="POST" action="check.php" enctype="multipart/form-data">
+
+            Car Name<input type="text" name="product_name" class="inputstyle" required><br><br><br>
+            Price<input type="number" name="product_price" class="inputstyle" required><br><br><br>
+            Owner Name<input type="text" name="owner_name" class="inputstyle" required><br><br><br>
+            Registered At<input type="text" name="registration_state" class="inputstyle" required><br><br><br>
+            Kms Driven<input type="number" name="kms_driven" class="inputstyle" required><br><br><br>
+            Owner Contact<input type="number" name="owner_contact" class="inputstyle" required><br><br><br>
+            Insurance<input type="text" name="insurance" class="inputstyle" required placeholder="input valid or invalid"><br><br><br>
+            Image of Car<input type="file" name="product_img" class="inputstyles" required><br><br><br>
+            <button  name="submit_details" class="btn-submit-details">Submit Details</button>
+        
+        </form>
+    </div>
+    </center>
+    <footer>
+        <p>Car Selling Website</p><br>
+        <p>For Any Queries Contact abc@gmail.com</p>
+    </footer>
+
+    
+</body>
+</html>

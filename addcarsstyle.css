@@ -1,0 +1,64 @@
+*{
+    font-family: 'Poppins', sans-serif;
+      
+}
+body{
+    align-items: center;
+    
+    background-color: beige;
+}
+.inputstyle{
+    border: 2rem;
+    border-color: blueviolet;
+    border-radius: 2rem;
+    font-size: larger;
+}
+.formstyle{
+    height: 100%;
+    width:100%;
+}
+form {
+    
+    /* height: 70rem; */
+    font-size:1.5rem;
+    font-weight: bold;
+    border: .2rem solid purple;
+    width: 50%;
+    margin:auto;
+    border-radius: 2rem;
+}
+.inputstyles{
+   
+    font-size: larger;
+}
+h1{
+    background-color: blueviolet;
+    text-align: center;
+    font-size: larger;
+    
+}
+.btn-submit-details{
+    border: 2rem;
+    border-color: blueviolet;
+    border-radius: .6rem;
+    font-size: larger;
+    background-color:gray;
+    color:#fff;
+
+}
+.btn-submit-details:hover{
+    cursor: pointer;
+    background-color: blueviolet;
+    color: black;
+}
+.textarea-input{
+    width:93%;
+    height:7rem;
+    box-sizing: border-box;
+    border:2px solid #ccc;
+    background-color: #f8f8f8;
+    font-size: 1.6rem;
+    resize: none;
+    
+    
+}
